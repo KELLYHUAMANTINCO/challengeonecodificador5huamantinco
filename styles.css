@@ -1,0 +1,279 @@
+body{
+  background-color: #E5E5E5;
+  display: flex;
+
+  font-family: 'Inter', sans-serif;
+}
+
+.left-container{
+  width: 60%;
+}
+
+.logoAlura{
+  margin: 40px 0 0 84px;
+}
+
+.input-container{
+  /* padding: 80px 80px 0 240px; */
+
+  padding: 80px 80px 0 calc(100%/6);
+}
+
+textarea{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+.inputMessage{
+  color: #0A3871;
+  font-size: 32px;
+  font-weight: 400px;
+  margin: 20px;
+}
+
+.inputMessage::placeholder{
+  color: #9c9c9c;
+  font-size: 32px;
+  font-weight: 400px;
+}
+
+.info-container{
+  display: flex;
+}
+
+.infoText{
+  padding: 0 0 0 8px;
+}
+
+.info-container img{
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.buttons-container{
+  margin: 16px 0 0 0;
+  justify-content: space-between;
+  display: flex;
+  gap: 32px;
+}
+
+button{
+  width: 100%;
+  height: 67px;
+  border-radius: 24px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+.btnEncrypt{
+  background-color: #0A3871;
+  color: white;
+}
+
+.btnDecrypt, .btnCopy{
+  outline: #0A3871 solid 2px;
+  color: #0A3871;
+  background-color: transparent;
+}
+
+.right-container{
+  width: 40%;
+}
+
+.output-container{
+  height: 650px;
+  background-color: white;
+  padding: 32px 32px;
+  margin: 40px 40px 0 0;
+  border-radius: 32px;
+  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.outputMessage{
+  height: 100%;
+  color: #495057;
+  font-size: 24px;
+  font-weight: 400px;
+  margin-bottom: 30px;
+}
+
+.correct-output{
+  height: 100%;
+  display: none;
+  flex-direction: column;
+}
+
+.incorrect-output{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.boy{
+  max-width: 336px;
+  height: auto;
+}
+
+.anyMessage{
+  margin-top: 30px;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #343A40;
+}
+
+.joinMessage{
+  margin-top: 16px;
+
+  font-size: 16px;
+  font-weight: 400px;
+  color: #343A40;
+}
+
+@media screen and (max-width: 1000px){
+  .boy{
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media screen and (max-width: 750px){
+  body{
+      flex-direction: column;
+  }
+
+  .left-container{
+      width: 100%;
+  }
+
+  .right-container{
+      width: 100%;
+  }
+
+  .buttons-container{
+     flex-direction: column;
+  }
+
+  .output-container{
+      height: 650px;
+      background-color: white;
+      padding: 32px 32px;
+      margin: 30px;
+      border-radius: 32px;
+      box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .correct-output{
+      height: 100%;
+      display: none;
+      flex-direction: column;
+  }
+}
+
+.mensaje-encriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16px;
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  text-align: center;
+}
+
+.mensaje-encriptado h2 {
+  width: 60%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343a40;
+}
+
+.mensaje-encriptado p {
+  width: 80%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+}
+
+.encriptado img {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 15%;
+}
+
+/* Responsive design */
+@media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .encriptar {
+    width: 100%;
+  }
+  .texto {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+  }
+  .terminos {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .terminos p {
+    font-size: 16px;
+  }
+  .botones {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+  .btn-encriptar,
+  .btn-desencriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+  .btn-encriptar:hover,
+  .btn-desencriptar:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+  .encriptado {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  .mensaje-encriptado {
+    width: 100%;
+    top: 5%;
+  }
+  .encriptado img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+}

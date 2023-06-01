@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<meta charset="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html lang="es">
+
+<head> <!-- dentro pongo las etiquetas informativas -->
+
+    <meta charset="UTF-8"> <!-- sirve para indicar que diccionario vamos a usar, este es el espanol -->
+    <title>Challenge Encriptador</title> <!-- sirve para indicar el nombre de la pagina, se ve en la pestaña -->
+    <link rel="stylesheet" href="reset.css"> <!-- sirve referenciar el archivo de estilos -->
+    <link rel="stylesheet" href="styles.css"> <!-- sirve referenciar el archivo de estilos -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300&display=swap" rel="stylesheet"> -->
+    <script src="hrrs://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <div class="left-container">
+        <header>
+            <img src="VectorAluraLogo.png" alt="Logo de Alura" class="logoAlura">
+        </header>
+
+        <main>
+            <section class="input-container">
+                <textarea id="inputMessage" placeholder="Ingrese su mensaje" class="inputMessage" cols="50"
+                    rows="10"></textarea>
+
+                <div class="info-container">
+                    <img src="VectorInfoButton.png" alt="Icono informacion">
+                    <h4 class="infoText">Solo letras minúsculas y sin acentos</h4>
+                </div>
+
+                <div class="buttons-container">
+                    <button id="btnEncrypt" class="btnEncrypt">Encriptar</button>
+                    <button id="btnDecrypt" class="btnDecrypt">Desencriptar</button>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <div class="right-container">
+        <section class="output-container">
+            <div class="correct-output">
+                <textarea class="outputMessage" id="outputMessage"></textarea>
+                <button id="btnCopy" class="btnCopy">Copiar</button>
+            </div>
+
+            <div class="incorrect-output">
+                <img class="boy" src="MuñecoBuscandoLupa.png" alt="Imagen niño buscando con una lupa">
+                <h4 class="anyMessage">Ningún mensaje fue encontrado</h4>
+                <h4 class="joinMessage">Ingresa el texto que desees encriptar o desencriptar.</h4>
+            </div>
+        </section>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
